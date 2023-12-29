@@ -1,0 +1,31 @@
+To create a live app:
+npx create-react-app@5 <title name>
+
+Possible error you can recieve when doing that:
+ npx create-react-app@5 pizza-menu
+npm ERR! code ENOENT
+npm ERR! syscall lstat
+npm ERR! path C:\Users\aaron\AppData\Roaming\npm
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, lstat 'C:\Users\aaron\AppData\Roaming\npm'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in: C:\Users\aaron\AppData\Local\npm-cache\_logs\2023-12-27T17_32_11_977Z-debug-0.log
+
+First, check the prefix being used:
+npm get prefix -g
+
+For me, that C:\Users\aaron\AppData\Roaming\npm didn't exist in file explorer. I created one:
+mkdir C:\Users\aaron\AppData\Roaming\npm
+
+Run npm get prefix -g again to make sure it's using the new directory. If not, use this command:
+npm config set prefix C:\Users\aaron\npm
+
+
+Finally, 
+npm run start (executing what's in the package.json file)
+
+
+If you get an error stating that something is already running on that localhost, run this:
+taskkill /F /IM node.exe
