@@ -1,6 +1,9 @@
 To create server-side app:
 npm init vite <title name>
 
+To install react node modules:
+npm i or npm install
+
 To create a live app:
 npx create-react-app@5 <title name>
 
