@@ -1,6 +1,9 @@
 To create server-side app:
 npm init vite <title name>
 
+After installing Vite, also run this for eslint:
+npm install eslint vite-plugin-eslint eslint-config-react-app --save-dev
+
 To install react node modules:
 npm i or npm install
 
