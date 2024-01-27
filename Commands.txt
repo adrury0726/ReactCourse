@@ -9,6 +9,14 @@ Also add file .eslintrc.json and this in the file:
   "extends": "react-app"
 }
 
+Lastly, also add the import and plugin to the vite.config.js file:
+import eslint from "vite-plugin-eslint";
+
+export default defineConfig({
+  plugins: [react(), eslint()],
+});
+
+
 To install react node modules:
 npm i or npm install
 
