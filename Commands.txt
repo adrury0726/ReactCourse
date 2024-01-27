@@ -4,6 +4,11 @@ npm init vite <title name>
 After installing Vite, also run this for eslint:
 npm install eslint vite-plugin-eslint eslint-config-react-app --save-dev
 
+Also add file .eslintrc.json and this in the file:
+{
+  "extends": "react-app"
+}
+
 To install react node modules:
 npm i or npm install
 
