@@ -21,7 +21,7 @@ To install react node modules:
 npm i or npm install
 
 To create a live app:
-npx create-react-app@5 <title name>
+npx create-react-app <title name>
 
 Possible error you can recieve when doing that:
  npx create-react-app@5 pizza-menu
@@ -51,3 +51,8 @@ npm run start (executing what's in the package.json file)
 
 If you get an error stating that something is already running on that localhost, run this:
 taskkill /F /IM node.exe
+
+If using Redux, run both commands:
+npm i redux
+npm i react-redux  # This one is so react and redux can talk to eachother
+
