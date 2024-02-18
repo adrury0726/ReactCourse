@@ -54,5 +54,7 @@ taskkill /F /IM node.exe
 
 If using Redux, run both commands:
 npm i redux
+
 npm i react-redux  # This one is so react and redux can talk to eachother
 
+npm install redux-thunk #Used for asynchronous API functionality
