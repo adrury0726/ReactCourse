@@ -60,3 +60,11 @@ npm i react-redux  # This one is so react and redux can talk to eachother
 npm install redux-thunk #Used for asynchronous API functionality
 
 npm install @reduxjs/toolkit --Can use this instead of the 2 options above. Combines them both.
+
+
+
+
+
+
+To install MUI:
+yarn add @mui/material @emotion/react @emotion/styled
